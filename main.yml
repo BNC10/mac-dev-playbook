@@ -53,3 +53,6 @@
       tags: ['post']
 
     - import_tasks: tasks/oh-my-zsh.yml
+      tags: ['always']
+    - import_tasks: tasks/sdkman.yml
+      tags: ['always']

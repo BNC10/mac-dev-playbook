@@ -44,6 +44,8 @@ homebrew_installed_packages:
   - wget
   - remotemobprogramming/brew/mob
   - tfenv
+  - packer
+  - fastlane
 
 homebrew_taps:
   - homebrew/core
@@ -59,6 +61,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - flutter
   - android-studio
+  - google-cloud-sdk
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

@@ -1,0 +1,6 @@
+---
+- name: Install SDKMan
+  command: 'curl -s "https://get.sdkman.io" | bash'
+
+- name: Config SDKMan
+  command: 'source "$HOME/.sdkman/bin/sdkman-init.sh"'
