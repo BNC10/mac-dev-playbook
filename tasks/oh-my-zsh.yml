@@ -1,0 +1,4 @@
+---
+- name: clone oh-my-zsh for users
+  become: true
+  command: 'sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
