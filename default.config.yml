@@ -46,7 +46,8 @@ homebrew_installed_packages:
   - tfenv
   - packer
   - fastlane
-
+  - act
+  
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
