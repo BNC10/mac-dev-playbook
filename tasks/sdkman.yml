@@ -1,6 +1,21 @@
 ---
-- name: Install SDKMan
-  command: 'curl -s "https://get.sdkman.io" | bash'
+
+- name: Download SDKMan installer
+  get_url:
+    url: https://get.sdkman.io
+    dest: /tmp/sdkman-installer.sh
+  changed_when: false
+
+- name: Execute the sdkman-installer.sh
+  command: sh /tmp/sdkman-installer.sh
+  changed_when: false
+
+- name: Remove the sdkman-installer.sh
+  file:
+    path: /tmp/sdkman-installer.sh
+    state: absent
+  changed_when: false
 
 - name: Config SDKMan
   command: 'source "$HOME/.sdkman/bin/sdkman-init.sh"'
+  changed_when: false
